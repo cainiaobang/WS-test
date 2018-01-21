@@ -1,0 +1,9 @@
+
+
+<jaxws:server id="helloService" address="/soap/hello">
+        <jaxws:serviceBean>
+            <ref bean="helloServiceImpl" />
+        </jaxws:serviceBean>
+    </jaxws:server>
+	
+	bean="helloServiceImpl" 里面首个字母h是小写，如何是大写H则会报错。
